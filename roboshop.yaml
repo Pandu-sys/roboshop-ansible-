@@ -8,7 +8,12 @@
       - redis
       - mysql
       - rabbitmq
+      - catalogue
+      - user
+      - cart
       - frontend 
+      - shipping
+      - payment 
     image_id: ami-0220d79f3f480ecf5
     domain_name: devopswithrani.online 
     action: create 
