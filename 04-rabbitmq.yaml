@@ -1,5 +1,5 @@
 - name: configuring rabbitmq server
-  hosts: mysql
+  hosts: rabbitmq 
   become: yes
   tasks:
   - name: copy rabbitmq repo 
@@ -8,7 +8,7 @@
       dest: /etc/yum.repos.d/rabbitmq.repo 
   - name: install rabbitmq server 
     package: 
-       name: rabbitmq server 
+       name: rabbitmq-server 
        state: present
   - name: start and enable rabbitmq server
     service:
