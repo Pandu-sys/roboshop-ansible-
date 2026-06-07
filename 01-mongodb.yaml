@@ -8,7 +8,7 @@
       dest: /etc/yum.repos.d/mongo.repo
   - name: install mongodb server
     package:
-      name: mondodb-org 
+      name: mongodb-org 
       state: present 
   - name: alloq remote connections
     replace: 
