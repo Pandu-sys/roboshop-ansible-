@@ -37,7 +37,7 @@
        dest: /app 
        remote_src: yes
   - name: install dependencies 
-    community.deneral.npm: 
+    community.general.npm: 
       path: /app 
   - name: copy user service 
     template:
