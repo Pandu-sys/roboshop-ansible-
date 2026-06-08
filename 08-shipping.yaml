@@ -45,3 +45,15 @@
     template:
       src: shipping.service.j2
       dest: /etc/systemd/system/shipping.service 
+  - name: load mysql data 
+    community.mysql.mysql_db:
+      state: import
+      name: all
+      login_user: root
+      login_password: RoboShop@1
+      login_host: "{{ MYSQL_HOST }}"
+      target: "{{ item }}"
+    loop:
+    - /app/db/schema.sql
+    - /app/db/app-user.sql 
+    - /app/db/master-data.sql
