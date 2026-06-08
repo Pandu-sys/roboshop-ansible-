@@ -7,3 +7,5 @@ RABBITMQ_HOST: rabbitmq.devopswithrani.online
 CATALOGUE_HOST: catalogue.devopswithrani.online
 USER_HOST: user.devopswithrani.online
 CART_HOST: cart.devopswithrani.online 
+SHIPPING_HOST: shipping.devopswithrani.online 
+PAYMENT_HOST: payment.devopswithrani.online 
